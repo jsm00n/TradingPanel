@@ -54,7 +54,7 @@ function getLayoutFromLocalStorage(): Layouts {
       ls =
         JSON.parse(
           localStorage.getItem('dashboard-layout') ??
-            JSON.stringify(defaultLayout)
+          JSON.stringify(defaultLayout)
         ) || defaultLayout
     } catch (e) {
       /*Ignore*/
@@ -90,9 +90,11 @@ const Dashboard = (): React.ReactElement => {
         breakpoints={{ xl: 1900, lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
         cols={{ xl: 4, lg: 3, md: 3, sm: 2, xs: 1, xxs: 1 }}
         rowHeight={(window.innerHeight - 130) / 2}
-        margin={[20, 20]}
+        margin={[10, 10]}
+        maxRows={2}
         onLayoutChange={onLayoutChange}
-        compactType={'horizontal'}
+        // compactType={'horizontal'}
+        verticalCompact={true}
         isDraggable={true}
         isResizable={false}
         useCSSTransforms={false}
