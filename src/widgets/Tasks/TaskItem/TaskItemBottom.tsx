@@ -34,7 +34,7 @@ const TaskItemBottom = () => {
                     {isExpanded ? "Hide Task Details" : "Show Task Details"}
                 </Button>
             </div >
-            <Separator className="w-full" orientation="horizontal"></Separator>
+            {isExpanded ? <Separator className="w-full" orientation="horizontal"></Separator> : <></>}
             <TaskBottomDetailItem isActive={isExpanded} />
         </div>
     )

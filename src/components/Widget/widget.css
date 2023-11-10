@@ -1,0 +1,25 @@
+.wrapper::-webkit-scrollbar {
+    display: block;
+    width: 5px;
+}
+.wrapper::-webkit-scrollbar-track {
+    margin-top: 46px;
+    margin-bottom: -5px;
+    background: transparent;
+}
+    
+.wrapper::-webkit-scrollbar-thumb {
+    background-color: #212226;
+    border-right: none;
+    border-left: none;
+}
+
+.wrapper::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 10px; 
+}
+
+.wrapper::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 10px;
+}

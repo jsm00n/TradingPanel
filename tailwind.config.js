@@ -15,12 +15,17 @@ module.exports = {
       'display': ['Oswald'],
       'body': ['"Open Sans"'],
     },
+    screens: {
+      "2xl": "1400px",
+      'm-md': '900px',
+    },
 
     container: {
       center: true,
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+        'tablet': '850px',
       },
     },
     extend: {

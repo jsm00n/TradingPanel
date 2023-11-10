@@ -11,6 +11,8 @@ const Tasks = () => {
     >
       <div className="w-full pl-2 pr-2 pb-2 space-y-1">
         <TaskItem></TaskItem>
+        <TaskItem></TaskItem>
+        <TaskItem></TaskItem>
       </div>
     </Widget>
   )

@@ -44,17 +44,17 @@ const WatchItem = () => {
             <div className="flex h-14 pl-2">
                 <table className="w-full mt-1 border-hidden border-spacing-y-0">
                     <thead>
-                        <tr className="w-full border-hidden font-light text-[12px] text-left text-gray-400">
-                            <th className="w-1/5">Pool</th>
-                            <th className="w-1/5">Market Cap</th>
-                            <th className="w-1/5">Holdings</th>
-                            <th className="w-2/5">Holding's value</th>
+                        <tr className="w-full border-hidden text-left text-gray-400">
+                            <th className="w-1/5 font-normal text-[12px]">Pool</th>
+                            <th className="w-1/5 font-normal text-[12px]">Market Cap</th>
+                            <th className="w-1/5 font-normal text-[12px]">Holdings</th>
+                            <th className="w-2/5 font-normal text-[12px]">Holding's value</th>
                         </tr>
                         <tr className="w-full border-hidden font-light text-[12px] text-left">
-                            <th>UniswapV3</th>
-                            <th>$633.487M</th>
-                            <th>0</th>
-                            <th>0-</th>
+                            <th className="font-normal text-[12px]">UniswapV3</th>
+                            <th className="font-normal text-[12px]">$633.487M</th>
+                            <th className="font-normal text-[12px]">0</th>
+                            <th className="font-normal text-[12px]">0-</th>
                         </tr>
                     </thead>
                     <tbody>

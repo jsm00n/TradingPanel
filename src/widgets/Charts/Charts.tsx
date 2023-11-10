@@ -9,7 +9,6 @@ const Charts = () => {
       bannerLeft={<BannerLeft />}
       bannerRight={<BannerRight />}
     >
-
     </Widget>
   )
 }

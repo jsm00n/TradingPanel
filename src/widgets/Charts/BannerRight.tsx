@@ -6,11 +6,11 @@ const BannerRight = () => {
   return (
     <>
       <div className="relative flex">
-        <span className="my-auto text-sm text-gray-500">MC</span>
-        <p className="my-auto ml-2 text-sm">$62.48K</p>
-        <span className="my-auto ml-4 text-sm text-gray-500">Liquidity</span>
-        <p className="my-auto ml-2 mr-4 text-sm">$41.586K</p>
-        <Button
+        <span className="my-auto text-xs m-md:text-sm text-gray-500">MC</span>
+        <p className="my-auto ml-2 text-xs m-md:text-sm">$62.48K</p>
+        <span className="my-auto ml-4 text-xs m-md:text-sm text-gray-500">Liquidity</span>
+        <p className="my-auto ml-2 mr-4 text-xs m-md:text-sm ">$41.586K</p>
+        {/* <Button
           size="sm"
           variant="outline"
           className="my-auto mr-2 h-7 w-7 rounded-full border bg-transparent p-1"
@@ -41,7 +41,7 @@ const BannerRight = () => {
           color="slate"
         >
           <PlusIcon />
-        </Button>
+        </Button> */}
       </div>
     </>
   )

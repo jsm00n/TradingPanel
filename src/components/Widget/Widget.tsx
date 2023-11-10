@@ -15,8 +15,8 @@ type Props = {
 
 const Widget = ({ title, bannerLeft, bannerRight, children }: Props) => {
   return (
-    <Card className="h-full w-full">
-      <div className="flex justify-between draggableHandle h-14">
+    <Card className="wrapper h-full w-full overflow-y-auto scroll-mt-15">
+      <div className="absolute mt-[1px] top-0 flex justify-between draggableHandle h-14 rounded-md bg-card" style={{ width: "calc(100% - 3px)" }}>
         <div className="flex">
           <p className="my-auto pl-3 text-[16px] font-medium">{title}</p>
           {bannerLeft}
@@ -32,7 +32,7 @@ const Widget = ({ title, bannerLeft, bannerRight, children }: Props) => {
           </Button>
         </div>
       </div>
-      <div className="flex">{children}</div>
+      <div className="flex mt-16">{children}</div>
     </Card>
   )
 }
