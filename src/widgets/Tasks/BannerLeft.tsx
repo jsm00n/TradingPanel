@@ -1,23 +1,30 @@
-import { Select, SelectItem } from '@tremor/react'
-import { CalculatorIcon } from '@heroicons/react/outline'
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 
 const BannerRight = () => {
   return (
     <>
-      <div className="relative">
-        <Select className="ml-4">
-          <SelectItem value="1" icon={CalculatorIcon}>
-            Kilometers
-          </SelectItem>
-          <SelectItem value="2" icon={CalculatorIcon}>
-            Meters
-          </SelectItem>
-          <SelectItem value="3" icon={CalculatorIcon}>
-            Miles
-          </SelectItem>
-          <SelectItem value="4" icon={CalculatorIcon}>
-            Nautical Miles
-          </SelectItem>
+      <div className="flex">
+        <Select>
+          <SelectTrigger className="my-auto ml-4 w-[130px] h-8 bg-button-gray rounded-sm border-solid border border-button-gray-border">
+            <SelectValue placeholder="All" />
+          </SelectTrigger>
+          <SelectContent className="bg-button-gray w-[130px]">
+            <SelectGroup>
+              <SelectItem value="apple">PEPE/WETH</SelectItem>
+              <SelectItem value="banana">PEPE/WETH</SelectItem>
+              <SelectItem value="blueberry">PEPE/WETH</SelectItem>
+              <SelectItem value="grapes">PEPE/WETH</SelectItem>
+              <SelectItem value="pineapple">PEPE/WETH</SelectItem>
+            </SelectGroup>
+          </SelectContent>
         </Select>
       </div>
     </>

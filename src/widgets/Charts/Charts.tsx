@@ -9,7 +9,7 @@ const Charts = () => {
       bannerLeft={<BannerLeft />}
       bannerRight={<BannerRight />}
     >
-      123
+
     </Widget>
   )
 }

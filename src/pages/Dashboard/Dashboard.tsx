@@ -82,7 +82,10 @@ const Dashboard = (): React.ReactElement => {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-dark-500">
+    <div className="min-h-screen">
+      <div className='h-10'>
+
+      </div>
       <SettingPane onReset={resetLayout} />
       <ResponsiveReactGridLayout
         draggableHandle=".draggableHandle"

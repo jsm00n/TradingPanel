@@ -1,18 +1,28 @@
-import { Button } from '@tremor/react'
 import { PlusIcon } from '@heroicons/react/outline'
+import { Button } from '@/components/ui/button'
 
 const BannerRight = () => {
+
+  const onClickHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault()
+    if (e.currentTarget == null) return
+
+    switch (e.currentTarget.name) {
+      case 'reset':
+
+        break
+    }
+  }
+
   return (
     <>
       <Button
-        icon={PlusIcon}
-        color="blue"
-        size="xs"
-        iconPosition="right"
-        className="mr-2 rounded-md"
+        className="my-auto float-right mr-3 rounded-sm h-8 text-[12px] bg-button-blue text-button-blue-foreground border-solid border border-button-blue-border"
+        variant="outline"
+        size="sm"
         name="reset"
-      >
-        New task
+        onClick={onClickHandler}>
+        New Task<PlusIcon className="ml-2 h-4 w-4" />
       </Button>
     </>
   )

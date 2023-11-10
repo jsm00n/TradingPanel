@@ -25,3 +25,7 @@
   box-sizing: border-box;
   cursor: se-resize;
 }
+
+.export-template-button {
+  --background: 222 45% 38%;
+}

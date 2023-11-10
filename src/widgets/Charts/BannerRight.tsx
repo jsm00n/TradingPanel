@@ -1,42 +1,47 @@
-import { Text, Button } from '@tremor/react'
+import { Button } from '@/components/ui/button'
 import { PlusIcon } from '@heroicons/react/outline'
+import { Plus } from 'lucide-react'
 
 const BannerRight = () => {
   return (
     <>
       <div className="relative flex">
-        <Text className="my-auto text-xl">MC</Text>
-        <p className="my-auto ml-2 text-xl text-white">62.48K</p>
-        <Text className="my-auto ml-4 text-xl">Liquidity</Text>
-        <p className="my-auto ml-2 mr-4 text-xl text-white">41.586K</p>
+        <span className="my-auto text-sm text-gray-500">MC</span>
+        <p className="my-auto ml-2 text-sm">$62.48K</p>
+        <span className="my-auto ml-4 text-sm text-gray-500">Liquidity</span>
+        <p className="my-auto ml-2 mr-4 text-sm">$41.586K</p>
         <Button
           size="sm"
-          variant="primary"
-          className="my-auto mr-2 h-9 w-9 rounded-[24px] border bg-transparent p-1"
+          variant="outline"
+          className="my-auto mr-2 h-7 w-7 rounded-full border bg-transparent p-1"
           color="slate"
-          icon={PlusIcon}
-        ></Button>
+        >
+          <PlusIcon />
+        </Button>
         <Button
           size="sm"
-          variant="primary"
-          className="my-auto mr-2 h-9 w-9 rounded-[24px] border bg-transparent p-1"
+          variant="outline"
+          className="my-auto mr-2 h-7 w-7 rounded-full border bg-transparent p-1"
           color="slate"
-          icon={PlusIcon}
-        ></Button>
+        >
+          <PlusIcon />
+        </Button>
         <Button
           size="sm"
-          variant="primary"
-          className="my-auto mr-2 h-9 w-9 rounded-[24px] border bg-transparent p-1"
+          variant="outline"
+          className="my-auto mr-2 h-7 w-7 rounded-[24px] border bg-transparent p-1"
           color="slate"
-          icon={PlusIcon}
-        ></Button>
+        >
+          <PlusIcon />
+        </Button>
         <Button
           size="sm"
-          variant="primary"
-          className="my-auto mr-2 h-9 w-9 rounded-[24px] border bg-transparent p-1"
+          variant="outline"
+          className="my-auto mr-2 h-7 w-7 rounded-[24px] border bg-transparent p-1"
           color="slate"
-          icon={PlusIcon}
-        ></Button>
+        >
+          <PlusIcon />
+        </Button>
       </div>
     </>
   )
