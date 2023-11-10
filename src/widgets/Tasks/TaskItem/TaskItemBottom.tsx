@@ -15,15 +15,15 @@ const TaskItemBottom = () => {
     return (
         <div className="flex-row h-full pl-8 pr-4">
             <div className="flex my-auto h-10 justify-between space-x-3">
-                <div className="flex my-auto space-x-4 text-[13px] font-medium">
-                    <div className="my-auto">Defi Task</div>
+                <div className="flex my-auto space-x-4 text-[13px] font-normal">
+                    <div className="my-auto text-xs m-md:text-sm">Defi Task</div>
                     <Separator className="h-6" orientation="vertical"></Separator>
                     <div className="flex my-auto">
-                        <div>Wallets</div>
+                        <div className="text-xs m-md:text-sm">Wallets</div>
                         <Badge className="my-auto ml-1 pl-1.5 pr-1.5 pb-0 pt-0 bg-gray-600" variant="secondary">5</Badge>
                     </div>
                     <Separator className="h-6" orientation="vertical"></Separator>
-                    <div className="my-auto">Total Wallet Balancer 0.2</div>
+                    <div className="my-auto text-xs m-md:text-sm">Total Wallet Balance 0.2</div>
                 </div>
                 <Button
                     name="expand"
