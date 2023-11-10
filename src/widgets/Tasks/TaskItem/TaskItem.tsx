@@ -4,7 +4,7 @@ import {
 
 import TaskItemTop from './TaskItemTop';
 import TaskItemBottom from './TaskItemBottom';
-
+import { Separator } from "@/components/ui/separator"
 
 const TaskItem = () => {
 

@@ -76,14 +76,14 @@ const TaskItemTop = () => {
                     <Button
                         size="icon"
                         variant="ghost"
-                        className="my-auto w-6 h-6 rounded-full border-none "
+                        className="my-auto w-6 h-6 rounded-full hover:bg-transparent border-none bg-none"
                     >
                         <ShareIcon />
                     </Button>
                     <Button
                         size="icon"
                         variant="ghost"
-                        className="my-auto w-6 h-6 rounded-full border-none"
+                        className="my-auto w-6 h-6 rounded-full hover:bg-transparent border-none"
                     >
                         <DotsVerticalIcon />
                     </Button>

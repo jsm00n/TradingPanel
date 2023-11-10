@@ -13,8 +13,8 @@ const TaskItemBottom = () => {
     }
 
     return (
-        <div className="flex-row h-full">
-            <div className="flex my-auto h-10 justify-between pl-8 space-x-3">
+        <div className="flex-row h-full pl-8 pr-4">
+            <div className="flex my-auto h-10 justify-between space-x-3">
                 <div className="flex my-auto space-x-4 text-[13px] font-medium">
                     <div className="my-auto">Defi Task</div>
                     <Separator className="h-6" orientation="vertical"></Separator>
@@ -34,6 +34,7 @@ const TaskItemBottom = () => {
                     {isExpanded ? "Hide Task Details" : "Show Task Details"}
                 </Button>
             </div >
+            <Separator className="w-full" orientation="horizontal"></Separator>
             <TaskBottomDetailItem isActive={isExpanded} />
         </div>
     )

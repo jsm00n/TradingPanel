@@ -30,7 +30,7 @@ const WatchItem = () => {
                 </div>
                 <div className="flex my-auto">
                     <Button
-                        className="my-auto mr-2 rounded-sm w-16 h-6 text-[13px] font-normal bg-button-red text-button-red-foreground border-solid border border-button-red-border"
+                        className="my-auto mr-2 rounded-sm w-16 h-6 text-[13px] font-normal bg-button-red text-button-red-foreground hover:bg-button-gray border-solid border border-button-red-border"
                         variant="outline"
                         size="sm"
                         name="reset">Sell</Button>
