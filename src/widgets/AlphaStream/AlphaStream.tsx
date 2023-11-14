@@ -6,14 +6,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import StreamChannel from "./StreamChannel/StreamChannel"
 import MessageChannel from './MessageChannel/MessageChannel';
 
-const AlphaStream = () => {
-
-  const [tabIndex, setTabIndex] = useState("2");
-
-  const handleChangeIndex = (index: string) => {
-    console.log(index);
-    setTabIndex(index);
-  };
+interface AlphaStreamProps {
+  tabIndex: string;
+}
+const AlphaStream: React.FC<AlphaStreamProps> = ({ tabIndex }) => {
 
   return (
     <Widget title={`AlphaStream`} setting={true} bannerRight={<BannerRight />}>

@@ -103,10 +103,10 @@ const Dashboard = (): React.ReactElement => {
         useCSSTransforms={false}
       >
         <div key="alphastream0" data-grid={layouts[0]}>
-          <AlphaStream />
+          <AlphaStream tabIndex="1" />
         </div>
         <div key="alphastream1" data-grid={layouts[1]}>
-          <AlphaStream />
+          <AlphaStream tabIndex="0" />
         </div>
         <div key="tasks" data-grid={layouts[2]}>
           <Tasks />
