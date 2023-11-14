@@ -2,7 +2,13 @@ import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
 import { PiCopy } from "react-icons/pi";
 
-const MessageItem = () => {
+interface MessageItemProps {
+    message: {
+        type: string;
+    }
+}
+
+const MessageItem: React.FC<MessageItemProps> = ({ message }) => {
 
     const images: string[] = ["img_eth.png", "img_pepe.png"];
 
@@ -10,8 +16,14 @@ const MessageItem = () => {
         <div className="flex-row w-full my-auto bg-watchitem-top-background border-solid border-2 border-button-gray-border rounded-sm h-32 pl-4 pr-4 pt-3">
             <div className="flex w-full justify-between">
                 <div className="flex">
-                    <div className="my-auto flex w-4 h-4 rounded-full bg-discord-icon-background justify-center items-center">
-                        <img src="discord.svg" className="w-2.5 h-2.5" />
+                    <div className={`my-auto flex w-4 h-4 rounded-full bg-${message.type}-icon-background justify-center items-center`}>
+                        {message.type === 'discord' && (
+                            <img src="discord.svg" className="w-2.5 h-2.5" alt="Discord Logo" />
+                        )}
+                        {message.type === 'telegram' && (
+                            <img src="telegram.svg" className="w-2.5 h-2.5" alt="Telegram Logo" />
+                        )}
+                        {/* Render the rest of the message */}
                     </div>
                     <Label className="my-auto max-w-[50%] ml-2 text-center font-medium text-[14px] text-card-foreground">DRBT AI Calls</Label>
                     <div className="my-auto ml-2 space-x-2">
@@ -38,7 +50,7 @@ const MessageItem = () => {
                 <Label className="font-normal text-[14px]">Shuriken, Contract:   </Label>
             </div>
             <div className="flex my-auto w-full rounded-sm mt-2 pr-1.5 pl-1.5 pb-1 pt-1 bg-[#262c3f] justify-between">
-                <Label className="text-[13px] ml-1 font-normal">0xEE86283a2DFCc1f52E86790e275e5b07b44A50E5</Label>
+                <Label className="my-auto text-[14px] ml-1 font-normal text-white/60">0xEE86283a2DFCc1f52E86790e275e5b07b44A50E5</Label>
                 <Button
                     size="icon"
                     variant="ghost"

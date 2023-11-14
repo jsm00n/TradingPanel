@@ -38,6 +38,7 @@ module.exports = {
         "watchitem-top-background": "hsl(var(--watchitem-top-background))",
         "watchitem-background": "hsl(var(--watchitem-background))",
         "discord-icon-background": "hsl(var(--discord-icon-background))",
+        "telegram-icon-background": "hsl(var(--telegram-icon-background))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
