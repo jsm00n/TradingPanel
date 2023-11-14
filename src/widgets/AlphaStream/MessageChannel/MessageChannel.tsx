@@ -9,13 +9,13 @@ import { CiFilter } from "react-icons/ci";
 const MessageChannel = () => {
 
     const message1 = {
-        type: 'discord',
-        text: 'Hello from Discord!',
+        type: "discord",
+        text: "Hello from Discord!",
     };
 
     const message2 = {
-        type: 'telegram',
-        text: 'Greetings from Telegram!',
+        type: "telegram",
+        text: "Greetings from Telegram!",
     };
 
     return (
@@ -35,12 +35,12 @@ const MessageChannel = () => {
                         <MessageItem message={message2}></MessageItem>
                         <MessageItem message={message1}></MessageItem>
                     </TabsContent>
-                    <TabsContent value="discord">
+                    <TabsContent value="discord" className="flex-row space-y-2">
                         <MessageItem message={message1}></MessageItem>
                         <MessageItem message={message1}></MessageItem>
                         <MessageItem message={message1}></MessageItem>
                     </TabsContent>
-                    <TabsContent value="telegram">
+                    <TabsContent value="telegram" className="flex-row space-y-2">
                         <MessageItem message={message2}></MessageItem>
                         <MessageItem message={message2}></MessageItem>
                         <MessageItem message={message2}></MessageItem>

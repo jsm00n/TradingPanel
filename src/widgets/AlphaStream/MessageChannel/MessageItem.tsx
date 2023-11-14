@@ -16,15 +16,18 @@ const MessageItem: React.FC<MessageItemProps> = ({ message }) => {
         <div className="flex-row w-full my-auto bg-watchitem-top-background border-solid border-2 border-button-gray-border rounded-sm h-32 pl-4 pr-4 pt-3">
             <div className="flex w-full justify-between">
                 <div className="flex">
-                    <div className={`my-auto flex w-4 h-4 rounded-full bg-${message.type}-icon-background justify-center items-center`}>
-                        {message.type === 'discord' && (
+
+                    {message.type === 'discord' && (
+                        <div className={`my-auto flex w-4 h-4 rounded-full bg-discord-icon-background justify-center items-center`}>
                             <img src="discord.svg" className="w-2.5 h-2.5" alt="Discord Logo" />
-                        )}
-                        {message.type === 'telegram' && (
+                        </div>
+                    )}
+                    {message.type === 'telegram' && (
+                        <div className={`my-auto flex w-4 h-4 rounded-full bg-telegram-icon-background justify-center items-center`}>
                             <img src="telegram.svg" className="w-2.5 h-2.5" alt="Telegram Logo" />
-                        )}
-                        {/* Render the rest of the message */}
-                    </div>
+                        </div>
+                    )}
+                    {/* Render the rest of the message */}
                     <Label className="my-auto max-w-[50%] ml-2 text-center font-medium text-[14px] text-card-foreground">DRBT AI Calls</Label>
                     <div className="my-auto ml-2 space-x-2">
                         <Button
