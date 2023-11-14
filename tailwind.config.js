@@ -37,6 +37,7 @@ module.exports = {
         foreground: "hsl(var(--foreground))",
         "watchitem-top-background": "hsl(var(--watchitem-top-background))",
         "watchitem-background": "hsl(var(--watchitem-background))",
+        "discord-icon-background": "hsl(var(--discord-icon-background))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -65,6 +66,10 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))"
         },
+        "label-gray": {
+          DEFAULT: "hsl(var(--label-gray))",
+          foreground: "hsl(var(--label-gray-foreground))"
+        },
 
         "button-blue": {
           DEFAULT: "hsl(var(--button-blue))",
@@ -88,7 +93,7 @@ module.exports = {
           DEFAULT: "hsl(var(--button-orange))",
           foreground: "hsl(var(--button-orange-foreground))",
           border: "hsl(var(--button-orange-border))"
-        }
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

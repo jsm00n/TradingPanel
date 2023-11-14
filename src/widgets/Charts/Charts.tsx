@@ -7,6 +7,7 @@ const Charts = () => {
   return (
     <Widget
       title={`Charts`}
+      setting={false}
       bannerLeft={<BannerLeft />}
       bannerRight={<BannerRight />}
     >

@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { CogIcon } from '@heroicons/react/outline'
 
 const BannerRight = () => {
   return (

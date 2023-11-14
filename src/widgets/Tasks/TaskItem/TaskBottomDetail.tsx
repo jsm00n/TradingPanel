@@ -52,12 +52,12 @@ const TaskBottomDetailItem = ({ isActive }: { isActive: boolean }) => {
                         className="my-auto mr-2 rounded-sm h-6 text-[11px] font-normal bg-button-blue text-button-blue-foreground border-solid border border-button-blue-border"
                         variant="outline"
                         size="sm"
-                        name="reset">View Logs</Button>
+                        name="viewlog">View Logs</Button>
                     <Button
                         className="my-auto rounded-sm h-6 text-[11px] font-normal bg-button-blue text-button-blue-foreground border-solid border border-button-blue-border"
                         variant="outline"
                         size="sm"
-                        name="reset">View Wallets</Button>
+                        name="viewwallet">View Wallets</Button>
                 </div>
             </div>
         </>

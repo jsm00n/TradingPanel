@@ -82,6 +82,11 @@
 
     --watchitem-top-background: 227 23% 16%;
     --watchitem-background: 233 23% 14%;
+
+    --label-gray: 227 6% 45%;
+    --label-gray-foreground: 224 6% 37%;
+
+    --discord-icon-background: 243 97% 66%;
   }
 }
  

@@ -6,6 +6,7 @@ const Tasks = () => {
   return (
     <Widget
       title={`Tasks`}
+      setting={false}
       bannerLeft={<BannerLeft />}
       bannerRight={<BannerRight />}
     >

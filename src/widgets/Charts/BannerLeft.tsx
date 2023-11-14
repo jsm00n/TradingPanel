@@ -7,7 +7,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { CalculatorIcon, StarIcon } from '@heroicons/react/outline'
 
 const BannerRight = () => {
   return (
@@ -19,11 +18,10 @@ const BannerRight = () => {
           </SelectTrigger>
           <SelectContent className="bg-button-gray w-[130px]">
             <SelectGroup>
-              <SelectItem value="apple">PEPE/WETH</SelectItem>
-              <SelectItem value="banana">PEPE/WETH</SelectItem>
-              <SelectItem value="blueberry">PEPE/WETH</SelectItem>
-              <SelectItem value="grapes">PEPE/WETH</SelectItem>
-              <SelectItem value="pineapple">PEPE/WETH</SelectItem>
+              <SelectItem value="PEPEWETH">PEPE/WETH</SelectItem>
+              <SelectItem value="PEPE3WETH">PEPE3/WETH</SelectItem>
+              <SelectItem value="WETHPEPE">WETH/PEPE</SelectItem>
+              <SelectItem value="WETHPEPE3">WETH/PEPE3</SelectItem>
             </SelectGroup>
           </SelectContent>
         </Select>

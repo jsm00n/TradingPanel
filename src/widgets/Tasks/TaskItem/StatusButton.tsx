@@ -22,7 +22,7 @@ const StatusButton: React.FC<StatusButtonProps> = ({ title, state }) => {
             className="my-auto rounded-sm pl-2 pr-2 h-4 text-[10px] bg-button-gray text-button-gray-foreground"
             variant="ghost">
             {title}
-            <div className={`w-2 h-2 ml-2 rounded-full ${bgColor}`}></div>
+            <div className={`w-1.5 h-1.5 ml-2 rounded-full ${bgColor}`}></div>
         </Button>
     )
 }

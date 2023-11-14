@@ -47,7 +47,7 @@ export default function TradingViewWidget() {
                 if (document.getElementById('tradingview_a4d9a') && 'TradingView' in window) {
                     new window.TradingView.widget({
                         autosize: true,
-                        symbol: "NASDAQ:AAPL",
+                        symbol: "PEPEWETH",
                         interval: "1",
                         timezone: "Etc/UTC",
                         theme: "dark",
@@ -56,7 +56,7 @@ export default function TradingViewWidget() {
                         enable_publishing: false,
                         withdateranges: true,
                         hide_side_toolbar: false,
-                        allow_symbol_change: true,
+                        allow_symbol_change: false,
                         container_id: "tradingview_a4d9a"
                     });
                 }
@@ -66,9 +66,9 @@ export default function TradingViewWidget() {
     );
 
     return (
-        <div ref={parentRef} className="parent w-full h-full">
-            <div className='tradingview-widget-container w-full h-full right-0'>
-                <div id='tradingview_a4d9a' className="h-full w-full right-0" />
+        <div className="w-full h-full">
+            <div className='tradingview-widget-container w-full h-full'>
+                <div id='tradingview_a4d9a' className="w-full h-full" />
             </div>
         </div>
     );
