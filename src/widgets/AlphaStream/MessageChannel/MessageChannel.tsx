@@ -35,7 +35,7 @@ const MessageChannel = () => {
                         <MessageItem message={message2}></MessageItem>
                         <MessageItem message={message1}></MessageItem>
                     </TabsContent>
-                    {/* <TabsContent value="discord" className="w-auto flex-row space-y-2">
+                    <TabsContent value="discord" className="w-auto flex-row space-y-2">
                         <MessageItem message={message1}></MessageItem>
                         <MessageItem message={message1}></MessageItem>
                         <MessageItem message={message1}></MessageItem>
@@ -44,7 +44,7 @@ const MessageChannel = () => {
                         <MessageItem message={message2}></MessageItem>
                         <MessageItem message={message2}></MessageItem>
                         <MessageItem message={message2}></MessageItem>
-                    </TabsContent> */}
+                    </TabsContent>
                 </Tabs>
 
             </div>
