@@ -12,7 +12,7 @@ const WatchItem = () => {
     const avatars: string[] = ["img_eth.png", "img_pepe.png"];
 
     return (
-        <Card className="flex-col h-24 my-auto mb-2 rounded-sm bg-watchitem-background border-solid border-2 border-button-gray-border divide-y divide-solid">
+        <div className="min-w-[370px] flex-col h-24 my-auto mb-2 rounded-sm bg-watchitem-background border-solid border-2 border-button-gray-border divide-y divide-solid">
             <div className="flex justify-between h-10 bg-watchitem-top-background">
                 <div className="flex my-auto">
 
@@ -66,7 +66,7 @@ const WatchItem = () => {
                     <RiShareBoxLine className="w-5 h-5" />
                 </Button>
             </div>
-        </Card>
+        </div>
     )
 }
 

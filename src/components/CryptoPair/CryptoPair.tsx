@@ -27,7 +27,7 @@ const CryptoPair: React.FC<CryptoPairProps> = ({ images, imageSize, space, margi
                     loading="lazy"
                 />
             </div>
-            <Label className={`my-auto ml-${margin} text-[${fontsize}px] font-medium`}>{title}</Label>
+            <Label className={`my-auto ml-${margin} text-[12px] m-md:text-[${fontsize}px] font-medium`}>{title}</Label>
         </div>
     );
 };

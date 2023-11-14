@@ -11,7 +11,7 @@ import SettingPane from './SettingPane'
 const ResponsiveReactGridLayout = WidthProvider(Responsive)
 const defaultLayout = {
   xl: [
-    { w: 1, h: 1, x: 0, y: 0, i: 'alphastream0', moved: false, static: false },
+    { w: 1, h: 1, x: 0, y: 0, i: 'alphastream0', moved: true, static: false },
     { w: 1, h: 1, x: 0, y: 1, i: 'alphastream1', moved: false, static: false },
     { w: 2, h: 1, x: 1, y: 0, i: 'tasks', moved: false, static: false },
     { w: 2, h: 1, x: 1, y: 1, i: 'charts', moved: false, static: false },
@@ -19,31 +19,31 @@ const defaultLayout = {
   ],
   lg: [
     { w: 1, h: 1, x: 0, y: 0, i: 'alphastream0', moved: false, static: false },
-    { w: 1, h: 1, x: 0, y: 1, i: 'alphastream1', moved: false, static: false },
-    { w: 2, h: 2, x: 1, y: 0, i: 'tasks', moved: false, static: false },
-    { w: 2, h: 2, x: 1, y: 2, i: 'charts', moved: false, static: false },
-    { w: 1, h: 2, x: 0, y: 2, i: 'watchlist', moved: false, static: false }
+    { w: 1, h: 1, x: 0, y: 1, i: 'alphastream1', moved: true, static: false },
+    { w: 2, h: 1, x: 1, y: 0, i: 'tasks', moved: false, minW: 2, static: false },
+    { w: 2, h: 1, x: 1, y: 1, i: 'charts', moved: false, minW: 2, static: false },
+    { w: 1, h: 2, x: 3, y: 0, i: 'watchlist', moved: false, static: false }
   ],
   md: [
     { w: 1, h: 1, x: 0, y: 0, i: 'alphastream0', moved: false, static: false },
     { w: 1, h: 1, x: 0, y: 1, i: 'alphastream1', moved: false, static: false },
-    { w: 2, h: 2, x: 1, y: 0, i: 'tasks', moved: false, static: false },
+    { w: 2, h: 2, x: 1, y: 0, i: 'tasks', moved: true, static: false },
     { w: 2, h: 2, x: 1, y: 2, i: 'charts', moved: false, static: false },
     { w: 1, h: 2, x: 0, y: 2, i: 'watchlist', moved: false, static: false }
   ],
   sm: [
-    { w: 1, h: 1, x: 0, y: 0, i: 'alphastream0', moved: false, static: false },
-    { w: 1, h: 1, x: 0, y: 1, i: 'alphastream1', moved: false, static: false },
+    { w: 2, h: 1, x: 0, y: 0, i: 'alphastream0', moved: false, static: false },
+    { w: 2, h: 1, x: 0, y: 1, i: 'alphastream1', moved: false, static: false },
     { w: 2, h: 1, x: 0, y: 2, i: 'tasks', moved: false, static: false },
-    { w: 2, h: 1, x: 0, y: 3, i: 'charts', moved: false, static: false },
-    { w: 1, h: 2, x: 1, y: 0, i: 'watchlist', moved: false, static: false }
+    { w: 2, h: 1, x: 0, y: 3, i: 'charts', moved: true, static: false },
+    { w: 2, h: 1, x: 0, y: 4, i: 'watchlist', moved: false, static: false }
   ],
   xs: [
     { w: 1, h: 1, x: 0, y: 0, i: 'alphastream0', moved: false, static: false },
     { w: 1, h: 1, x: 0, y: 1, i: 'alphastream1', moved: false, static: false },
     { w: 1, h: 2, x: 0, y: 2, i: 'tasks', moved: false, static: false },
-    { w: 1, h: 2, x: 0, y: 4, i: 'charts', moved: false, static: false },
-    { w: 1, h: 2, x: 0, y: 6, i: 'watchlist', moved: false, static: false }
+    { w: 1, h: 2, x: 0, y: 3, i: 'charts', moved: false, static: false },
+    { w: 1, h: 2, x: 0, y: 4, i: 'watchlist', moved: true, static: false }
   ]
 }
 
@@ -73,7 +73,7 @@ const Dashboard = (): React.ReactElement => {
   const [layouts, setLayouts] = useState<Layouts>(getLayoutFromLocalStorage())
 
   const resetLayout = () => {
-    setLayouts({})
+    setLayouts(getLayoutFromLocalStorage())
   }
 
   const onLayoutChange = (currentLayout: Layout[], allLayouts: Layouts) => {
@@ -91,15 +91,15 @@ const Dashboard = (): React.ReactElement => {
         draggableHandle=".draggableHandle"
         layouts={layouts}
         breakpoints={{ xl: 1900, lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
-        cols={{ xl: 4, lg: 3, md: 3, sm: 2, xs: 1, xxs: 1 }}
+        cols={{ xl: 4, lg: 4, md: 3, sm: 2, xs: 1, xxs: 1 }}
         rowHeight={(window.innerHeight - 130) / 2}
         margin={[10, 10]}
         maxRows={2}
         onLayoutChange={onLayoutChange}
-        // compactType={'horizontal'}
+        compactType={'vertical'}
         verticalCompact={true}
         isDraggable={true}
-        isResizable={false}
+        isResizable={true}
         useCSSTransforms={false}
       >
         <div key="alphastream0" data-grid={layouts[0]}>

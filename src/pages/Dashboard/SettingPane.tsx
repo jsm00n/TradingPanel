@@ -24,6 +24,8 @@ type Props = {
 const SettingPane = ({ onReset }: Props) => {
   const onClickHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault()
+
+    onReset();
   }
 
   return (

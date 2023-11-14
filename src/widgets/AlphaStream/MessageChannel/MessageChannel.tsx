@@ -20,7 +20,7 @@ const MessageChannel = () => {
 
     return (
         <div className="flex-row w-full h-full pb-2 pl-2 pr-2 space-y-2">
-            <div className="flex w-full justify-between">
+            <div className="flex w-full ">
                 <Tabs className="w-full h-[30px]" defaultValue={"all"}>
                     <TabsList className="h-[30px] bg-card border button-gray-border border-solid">
                         <TabsTrigger className="h-[20px] data-[state=active]:bg-button-gray text-label-gray-foreground text-[12px] data-[state=active]:text-white font-normal" value="all">All</TabsTrigger>
@@ -35,16 +35,16 @@ const MessageChannel = () => {
                         <MessageItem message={message2}></MessageItem>
                         <MessageItem message={message1}></MessageItem>
                     </TabsContent>
-                    <TabsContent value="discord" className="flex-row space-y-2">
+                    {/* <TabsContent value="discord" className="w-auto flex-row space-y-2">
                         <MessageItem message={message1}></MessageItem>
                         <MessageItem message={message1}></MessageItem>
                         <MessageItem message={message1}></MessageItem>
                     </TabsContent>
-                    <TabsContent value="telegram" className="flex-row space-y-2">
+                    <TabsContent value="telegram" className="w-auto flex-row space-y-2">
                         <MessageItem message={message2}></MessageItem>
                         <MessageItem message={message2}></MessageItem>
                         <MessageItem message={message2}></MessageItem>
-                    </TabsContent>
+                    </TabsContent> */}
                 </Tabs>
 
             </div>

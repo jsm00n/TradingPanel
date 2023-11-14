@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge"
 
 const BannerRight = () => {
   return (
-    <>
+    <div className={`flex ${'hidden m-md:inline-flex'}`}>
       <span className="mr-3 flex">
         <img className="mr-2" src="./telegram.svg" width={24} height={24} />
         <span className="my-auto mr-1 text-[13px]">Telegram</span>
@@ -21,7 +21,7 @@ const BannerRight = () => {
         color="slate"
         icon={CogIcon}
       ></Button> */}
-    </>
+    </div>
   )
 }
 
