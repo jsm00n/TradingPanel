@@ -1,4 +1,4 @@
-import { PlusIcon } from '@heroicons/react/outline'
+import { PlusIcon } from '@heroicons/react/20/solid'
 import { Button } from '@/components/ui/button'
 
 const BannerRight = () => {

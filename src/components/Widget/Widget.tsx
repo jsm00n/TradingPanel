@@ -3,7 +3,7 @@ import {
   Card
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { DotsVerticalIcon } from '@heroicons/react/outline'
+import { EllipsisVerticalIcon } from '@heroicons/react/20/solid'
 import { FiSettings } from "react-icons/fi";
 import './widget.css'
 
@@ -39,7 +39,7 @@ const Widget = ({ title, setting, bannerLeft, bannerRight, children }: Props) =>
             variant="ghost"
             className="my-auto h-8 w-7 hover:bg-button-gray"
           >
-            <DotsVerticalIcon className="h-14 w-5"></DotsVerticalIcon>
+            <EllipsisVerticalIcon className="h-14 w-5"></EllipsisVerticalIcon>
           </Button>
         </div>
       </div>

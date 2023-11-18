@@ -10,7 +10,7 @@ interface MessageItemProps {
 
 const MessageItem: React.FC<MessageItemProps> = ({ message }) => {
 
-    const images: string[] = ["img_eth.png", "img_pepe.png"];
+    const images: string[] = ["img_weth.png", "img_pepe.png"];
 
     return (
         <div className="min-w-[350px] flex-row w-full my-auto bg-watchitem-top-background border-solid border-2 border-button-gray-border rounded-sm h-auto m-md:h-32 pl-4 pr-4 pt-3 pb-2">

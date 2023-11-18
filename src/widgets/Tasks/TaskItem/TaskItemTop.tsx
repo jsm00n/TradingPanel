@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { DotsVerticalIcon, PlayIcon, ShareIcon } from "@heroicons/react/outline"
+import { EllipsisVerticalIcon } from "@heroicons/react/20/solid"
 import { Separator } from "@/components/ui/separator"
 import { Switch } from "@/components/ui/switch"
 import { RiShareBoxLine } from "react-icons/ri";
@@ -8,7 +8,7 @@ import { GoPlay } from "react-icons/go";
 
 const TaskItemTop = () => {
 
-    const images: string[] = ["img_eth.png", "img_pepe.png"];
+    const images: string[] = ["img_weth.png", "img_pepe.png"];
 
     const onClickHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault()
@@ -25,8 +25,8 @@ const TaskItemTop = () => {
         <div className="flex-row m-md:flex h-22 m-md:h-16 m-md:justify-between pr-2 bg-watchitem-top-background">
             <div className="flex my-auto justify-center m-md:jutify-between">
                 <Button className="my-auto w-8 hover:bg-transparent border-none text-gray-600" variant="ghost" size="icon">
-                    <DotsVerticalIcon className="my-auto w-4 h-4"></DotsVerticalIcon>
-                    <DotsVerticalIcon className="my-auto ml-[-0.6rem] w-4 h-4"></DotsVerticalIcon>
+                    <EllipsisVerticalIcon className="my-auto w-4 h-4"></EllipsisVerticalIcon>
+                    <EllipsisVerticalIcon className="my-auto ml-[-0.6rem] w-4 h-4"></EllipsisVerticalIcon>
                 </Button>
                 <CryptoPair images={images} imageSize={6} space={-0.5} margin={3} title="WETH/PEPE" fontsize={14} />
                 <div className="flex ml-4 mt-2 m-md:mt-0">
@@ -89,7 +89,7 @@ const TaskItemTop = () => {
                         variant="ghost"
                         className="my-auto w-5 h-5 rounded-full hover:bg-transparent border-none"
                     >
-                        <DotsVerticalIcon />
+                        <EllipsisVerticalIcon />
                     </Button>
                 </div>
             </div>

@@ -12,10 +12,9 @@ import {
 
 import {
   LockClosedIcon,
-  SearchIcon,
-  CalculatorIcon
-} from '@heroicons/react/outline'
+} from '@heroicons/react/20/solid'
 import "./dashboard.css"
+import { Connect } from 'vite'
 
 type Props = {
   onReset: () => void
@@ -59,9 +58,9 @@ const SettingPane = ({ onReset }: Props) => {
           </SelectContent>
         </Select>
       </div>
-      <div className='basis-2/4'>
+      <div className='flex basis-2/4 justify-end'>
         <Button
-          className="float-right mr-3 rounded-sm text-[13px] bg-button-blue text-button-blue-foreground border-solid border border-button-blue-border"
+          className="float-right my-auto ml-3 mr-3 h-10 rounded-sm text-[13px] bg-button-blue text-button-blue-foreground border-solid border border-button-blue-border"
           variant="outline"
           size="sm">
           Export Template

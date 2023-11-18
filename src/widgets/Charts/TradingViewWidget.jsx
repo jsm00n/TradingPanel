@@ -15,14 +15,10 @@ export default function TradingViewWidget() {
             if (parentRef.current) {
                 // Get the height of the parent container
                 const parentHeight = parentRef.current.clientHeight;
-                console.log(parentHeight); // Display the height in the console
 
                 // Set the height of the child element
                 const calculatedChildHeight = parentHeight / 2; // Modify this calculation as needed
                 setChildHeight(calculatedChildHeight);
-                console.log(calculatedChildHeight);
-
-                console.log("Called Here");
             }
 
             onLoadScriptRef.current = createWidget;

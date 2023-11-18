@@ -1,11 +1,11 @@
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
-import { DotsVerticalIcon } from "@heroicons/react/outline"
+import { EllipsisVerticalIcon } from "@heroicons/react/20/solid"
 import CryptoPair from "components/CryptoPair/CryptoPair"
 
 const StreamItem = () => {
 
-    const images: string[] = ["img_eth.png", "img_pepe.png"];
+    const images: string[] = ["img_weth.png", "img_pepe.png"];
 
     return (
         <div className="min-w-[350px] flex w-full my-auto bg-watchitem-top-background rounded-sm h-14 pt-2">
@@ -27,7 +27,7 @@ const StreamItem = () => {
                     variant="ghost"
                     className={`my-auto ml-1 w-5 h-5 rounded-full hover:bg-transparent border-none text-gray-600`}
                 >
-                    <DotsVerticalIcon />
+                    <EllipsisVerticalIcon />
                 </Button>
             </div>
         </div >

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { WidthProvider, Responsive, Layouts, Layout } from 'react-grid-layout'
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 import 'react-grid-layout/css/styles.css'
 import 'react-resizable/css/styles.css'
@@ -82,9 +83,14 @@ const Dashboard = (): React.ReactElement => {
   }
 
   return (
-    <div className="min-h-screen">
-      <div className='h-10'>
-
+    <div className="flex-row min-h-screen">
+      <div className='flex p-3 justify-end'>
+        <ConnectButton
+          showBalance={{
+            smallScreen: false,
+            largeScreen: true,
+          }}
+        />
       </div>
       <SettingPane onReset={resetLayout} />
       <ResponsiveReactGridLayout
@@ -92,7 +98,7 @@ const Dashboard = (): React.ReactElement => {
         layouts={layouts}
         breakpoints={{ xl: 1900, lg: 1200, md: 996, sm: 768, xs: 480, xxs: 0 }}
         cols={{ xl: 4, lg: 4, md: 3, sm: 2, xs: 1, xxs: 1 }}
-        rowHeight={(window.innerHeight - 130) / 2}
+        rowHeight={(window.innerHeight - 140) / 2}
         margin={[10, 10]}
         maxRows={2}
         onLayoutChange={onLayoutChange}

@@ -2,6 +2,7 @@ import { Widget } from 'components'
 import BannerLeft from './BannerLeft'
 import BannerRight from './BannerRight'
 import TaskItem from './TaskItem/TaskItem'
+
 const Tasks = () => {
   return (
     <Widget

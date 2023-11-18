@@ -1,6 +1,6 @@
 {
-  "name": "Shuriken",
-  "description": "Shuriken.",
+  "name": "TradingPanel",
+  "description": "TradingPanel.",
   "version": "0.1.0",
   "scripts": {
     "dev": "vite",
@@ -12,7 +12,9 @@
     "typecheck": "tsc --project tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@heroicons/react": "^1.0.6",
+    "@apollo/client": "^3.8.1",
+    "@headlessui/react": "^1.7.16",
+    "@heroicons/react": "^2.0.18",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-select": "^2.0.0",
@@ -20,8 +22,11 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-switch": "^1.0.3",
     "@radix-ui/react-tabs": "^1.0.4",
+    "@rainbow-me/rainbowkit": "^1.2.0",
     "class-variance-authority": "^0.7.0",
     "esbuild": "^0.19.5",
+    "graphql": "^16.8.1",
+    "hooks": "^0.3.2",
     "lucide-react": "^0.292.0",
     "react": "^18.2.0",
     "react-collapsed": "^4.1.1",
@@ -30,7 +35,9 @@
     "react-icons": "^4.11.0",
     "react-router-dom": "^6.18.0",
     "tailwind-merge": "^2.0.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "viem": "^1.19.3",
+    "wagmi": "^1.4.7"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.1.4",

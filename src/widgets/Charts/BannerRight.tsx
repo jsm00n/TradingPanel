@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button'
-import { PlusIcon } from '@heroicons/react/outline'
 import { Plus } from 'lucide-react'
 
 const BannerRight = () => {
@@ -16,7 +15,7 @@ const BannerRight = () => {
           className="my-auto mr-2 h-7 w-7 rounded-full border bg-transparent p-1"
           color="slate"
         >
-          <PlusIcon />
+          <Plus />
         </Button>
         <Button
           size="sm"
@@ -24,7 +23,7 @@ const BannerRight = () => {
           className="my-auto mr-2 h-7 w-7 rounded-full border bg-transparent p-1"
           color="slate"
         >
-          <PlusIcon />
+          <Plus />
         </Button>
         <Button
           size="sm"
