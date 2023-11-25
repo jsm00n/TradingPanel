@@ -49,7 +49,6 @@ const useSell = ({ token0, feeTier, token1, maxSpendableAmount, address }: Props
                 ]
             })
             if (allowance < amount) {
-                console.log(configForApprove)
                 try {
                     let { hash } = await writeContract(configForApprove);
                     await waitForTransaction({ hash });

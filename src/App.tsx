@@ -8,7 +8,6 @@ import "@rainbow-me/rainbowkit/styles.css";
 
 const App = () => {
 
-  console.log("subgraphClient = ", subgraphClient);
   return (
     <ApolloProvider client={subgraphClient}>
       <WalletProvider>

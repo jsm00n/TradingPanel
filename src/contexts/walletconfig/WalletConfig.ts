@@ -32,7 +32,6 @@ const { chains, publicClient } = configureChains(
 const projectId = import.meta.env.VITE_PUBLIC_PROJECT_ID
   ? import.meta.env.VITE_PUBLIC_PROJECT_ID
   : "";
-console.log("projectId = ", projectId);
 
 const connectors = connectorsForWallets([
   ...getDefaultWallets({

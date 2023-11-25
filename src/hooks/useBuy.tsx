@@ -38,7 +38,6 @@ const useBuy = ({ token0, feeTier, token1, address, maxSpendableAmount }: Props)
             return;
 
         const fs = async () => {
-            console.log("chk1")
             setLoadingForBuy(true)
             let allowance = await readContract({
                 address: `0x${token0.slice(2)}`,
@@ -49,9 +48,7 @@ const useBuy = ({ token0, feeTier, token1, address, maxSpendableAmount }: Props)
                     "0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45",
                 ]
             })
-            console.log("chk2")
             if (allowance < amount) {
-                console.log(configForApprove)
                 try {
                     let { hash } = await writeContract(configForApprove);
                     await waitForTransaction({ hash });
@@ -59,7 +56,6 @@ const useBuy = ({ token0, feeTier, token1, address, maxSpendableAmount }: Props)
                     throw (e)
                 }
             }
-            console.log("chk3")
 
             let dataForBuy = undefined;
             try {
@@ -87,7 +83,6 @@ const useBuy = ({ token0, feeTier, token1, address, maxSpendableAmount }: Props)
             setLoadingForBuy(false)
 
             return dataForBuy
-            console.log("chk4")
         }
         fs();
     }, [token0, token1, feeTier, address, configForApprove])
